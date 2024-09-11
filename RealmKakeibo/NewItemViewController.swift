@@ -8,6 +8,8 @@ class NewItemViewController: UIViewController {
     @IBOutlet var markSwitch: UISwitch!
     
     let realm = try! Realm()
+    
+    var category: Category!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class NewItemViewController: UIViewController {
 //        String型をInt型に変換する時もおなじ
         item.price = Int(priceTextField.text ?? "") ?? 0
         item.isMarked = markSwitch.isOn
+        item.category = category
         createItem(item: item)
         
         self.dismiss(animated: true)

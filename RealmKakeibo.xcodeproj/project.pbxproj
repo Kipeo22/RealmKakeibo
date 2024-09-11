@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		73AFF1772C909EE600BAD505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1762C909EE600BAD505 /* AppDelegate.swift */; };
 		73AFF1792C909EE600BAD505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1782C909EE600BAD505 /* SceneDelegate.swift */; };
-		73AFF17B2C909EE600BAD505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF17A2C909EE600BAD505 /* ViewController.swift */; };
+		73AFF17B2C909EE600BAD505 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF17A2C909EE600BAD505 /* ItemViewController.swift */; };
 		73AFF17E2C909EE600BAD505 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 73AFF17D2C909EE600BAD505 /* Base */; };
 		73AFF1802C909EE800BAD505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AFF17F2C909EE800BAD505 /* Assets.xcassets */; };
 		73AFF1832C909EE800BAD505 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 73AFF1822C909EE800BAD505 /* Base */; };
@@ -19,6 +19,9 @@
 		73AFF1942C90A39800BAD505 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1912C90A39800BAD505 /* ItemTableViewCell.swift */; };
 		73AFF1952C90AC9400BAD505 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 73AFF18D2C90A00200BAD505 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		73AFF1982C90ADD700BAD505 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1972C90ADD700BAD505 /* NewItemViewController.swift */; };
+		73AFF1C92C91AC3C00BAD505 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1C82C91AC3C00BAD505 /* Category.swift */; };
+		73AFF1CB2C91B12F00BAD505 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1CA2C91B12F00BAD505 /* CategoryViewController.swift */; };
+		73AFF1CD2C91BB9500BAD505 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFF1CC2C91BB9500BAD505 /* NewCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +42,7 @@
 		73AFF1732C909EE600BAD505 /* RealmKakeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmKakeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AFF1762C909EE600BAD505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73AFF1782C909EE600BAD505 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73AFF17A2C909EE600BAD505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73AFF17A2C909EE600BAD505 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		73AFF17D2C909EE600BAD505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73AFF17F2C909EE800BAD505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AFF1822C909EE800BAD505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		73AFF1912C90A39800BAD505 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		73AFF1922C90A39800BAD505 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		73AFF1972C90ADD700BAD505 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		73AFF1C82C91AC3C00BAD505 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		73AFF1CA2C91B12F00BAD505 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		73AFF1CC2C91BB9500BAD505 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +89,7 @@
 			children = (
 				73AFF1762C909EE600BAD505 /* AppDelegate.swift */,
 				73AFF1782C909EE600BAD505 /* SceneDelegate.swift */,
-				73AFF17A2C909EE600BAD505 /* ViewController.swift */,
+				73AFF17A2C909EE600BAD505 /* ItemViewController.swift */,
 				73AFF17C2C909EE600BAD505 /* Main.storyboard */,
 				73AFF17F2C909EE800BAD505 /* Assets.xcassets */,
 				73AFF1812C909EE800BAD505 /* LaunchScreen.storyboard */,
@@ -92,6 +98,9 @@
 				73AFF1912C90A39800BAD505 /* ItemTableViewCell.swift */,
 				73AFF1922C90A39800BAD505 /* ItemTableViewCell.xib */,
 				73AFF1972C90ADD700BAD505 /* NewItemViewController.swift */,
+				73AFF1C82C91AC3C00BAD505 /* Category.swift */,
+				73AFF1CA2C91B12F00BAD505 /* CategoryViewController.swift */,
+				73AFF1CC2C91BB9500BAD505 /* NewCategoryViewController.swift */,
 			);
 			path = RealmKakeibo;
 			sourceTree = "<group>";
@@ -176,11 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				73AFF1902C90A1E200BAD505 /* ShoppingItem.swift in Sources */,
-				73AFF17B2C909EE600BAD505 /* ViewController.swift in Sources */,
+				73AFF1CD2C91BB9500BAD505 /* NewCategoryViewController.swift in Sources */,
+				73AFF17B2C909EE600BAD505 /* ItemViewController.swift in Sources */,
 				73AFF1982C90ADD700BAD505 /* NewItemViewController.swift in Sources */,
 				73AFF1942C90A39800BAD505 /* ItemTableViewCell.swift in Sources */,
+				73AFF1CB2C91B12F00BAD505 /* CategoryViewController.swift in Sources */,
 				73AFF1772C909EE600BAD505 /* AppDelegate.swift in Sources */,
 				73AFF1792C909EE600BAD505 /* SceneDelegate.swift in Sources */,
+				73AFF1C92C91AC3C00BAD505 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

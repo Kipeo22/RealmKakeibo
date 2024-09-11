@@ -1,7 +1,7 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ItemViewController: UIViewController, UITableViewDataSource {
 
     
     
@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
 //    読み取ったデータを入れる用の配列
     var items: [ShoppingItem] = []
+    
+    var selectedCategory: Category!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         
 //        readItem関数で読み取ったデータをitemsに代入
         items = readItems()
+        
+//        NavigationItem(上に見えているタイトル)にカテゴリーのなまえを入れる
+        navigationItem.title = selectedCategory.title
     }
     
 //    viewWillAppearは画面が表示される時に実行されるメソッド(戻ってきた時にも実行される)
@@ -48,7 +53,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     
 //    Realmにアクセスしてデータの読み取り
     func readItems() -> [ShoppingItem] {
-        return Array(realm.objects(ShoppingItem.self))
+        return Array(realm.objects(ShoppingItem.self).filter("category == %@", selectedCategory))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toNewItemView"){
+            let newItemViewController = segue.destination as! NewItemViewController
+            newItemViewController.category = self.selectedCategory
+        }
     }
 
 }
